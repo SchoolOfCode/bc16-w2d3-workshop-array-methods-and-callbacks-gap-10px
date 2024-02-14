@@ -79,3 +79,12 @@ console.log(months.indexOf("plumb"));
 console.log(months.indexOf("foo"));
 
 // ***** Ticket 5 ********
+console.log(" **** Ticket 5 ****** ");
+
+// map method
+vatResult = [];
+for (i = 0; i < productsArray.length; i++) {
+  vatResult[i] = productsArray[i];
+  vatResult[i].price *= 1.2;
+}
+console.log(vatResult);
