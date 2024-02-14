@@ -56,6 +56,10 @@ let filterResult = words.filter((word) => word.length > 6);
 console.log(filterResult);
 
 // task 3
+// so p holds the value of 0 initially.
+// c holds the value at index 0 then 1 then 2 etch
+// then p += c and then c moves on to the next index.
+// the result is the arry is summed. horrible syntax
 const numbers = [3, 6, 2, 9, 1];
 const sum = numbers.reduce((p, c) => {
   return p + c;
