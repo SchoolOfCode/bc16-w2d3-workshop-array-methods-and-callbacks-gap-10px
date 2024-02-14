@@ -34,3 +34,8 @@ let productsArray = [
 ];
 
 let vatArray = productsArray.map((x) => x.price * 1.2);
+
+let bigVatArray = productsArray.map((x) => {
+  x.price *= 1.2;
+  return x;
+});
