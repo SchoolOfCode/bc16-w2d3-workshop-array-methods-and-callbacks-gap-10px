@@ -1,14 +1,36 @@
-
-
-function greet (name){
-    console.log (`Hello ${name}`);
+function greet(name) {
+  console.log(`Hello ${name}`);
 }
 
-function techWizzardry (callback, ...rest) {
-    rest.map (callback);
+function techWizzardry(callback, ...rest) {
+  rest.map(callback);
 }
 
-// Create a function that accepts:
-// A callback function
-// Three name parameters ✔
-// It should call the callback function (in this case, the greeting function we made), passing each name 
+let productsArray = [
+  {
+    product: "Shoes",
+    price: 25,
+  },
+  {
+    product: "Hat",
+    price: 5,
+  },
+  {
+    product: "socks",
+    price: 2,
+  },
+  {
+    product: "bottoms",
+    price: 15,
+  },
+  {
+    product: "pants",
+    price: 10,
+  },
+  {
+    product: "knickers",
+    price: 20,
+  },
+];
+
+let vatArray = productsArray.map((x) => x.price * 1.2);
