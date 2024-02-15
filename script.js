@@ -86,9 +86,24 @@ console.log(months.indexOf("foo"));
 console.log(" **** Ticket 5 ****** ");
 
 // map method
-vatResult = [];
-for (i = 0; i < productsArray.length; i++) {
-  vatResult[i] = productsArray[i];
+let vatResult = productsArray;
+for (i = 0; i < vatResult.length; i++) {
   vatResult[i].price *= 1.2;
 }
 console.log(vatResult);
+console.log(productsArray);
+
+//  testing
+console.log(" *** testing *** ");
+
+let originalList = [1, 2, 4, 8];
+// let newList = originalList; Wrong way to do it
+
+let newList = [...originalList];
+
+for (var i = 0; i < newList.length; i++) {
+  newList[i] += 1;
+}
+
+console.log("new list " + newList);
+console.log("old list " + originalList);
