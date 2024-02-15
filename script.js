@@ -107,3 +107,13 @@ for (var i = 0; i < newList.length; i++) {
 
 console.log("new list " + newList);
 console.log("old list " + originalList);
+
+/**
+ * This function adds two numbers together.
+ * @param {number} a - The first number.
+ * @param {number} b - The second number.
+ * @returns {number} The sum of the two numbers.
+ */
+function addNumbers(a, b) {
+  return a + b;
+}
